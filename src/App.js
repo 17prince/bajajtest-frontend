@@ -41,7 +41,7 @@ const App = () => {
 
     // Call the backend API
     try {
-      const res = await axios.post("http://localhost:3001/bfhl", parsedInput); // Replace with your deployed backend URL
+      const res = await axios.post("https://bajajtest-backend.vercel.app/bfhl", parsedInput); // Replace with your deployed backend URL
       setResponse(res.data);
     } catch (err) {
       setError("Failed to fetch API. Check your backend service.");
